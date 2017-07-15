@@ -1,0 +1,14 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+logs/
+
+# vscode
+.vscode
+debug
+vendor/
