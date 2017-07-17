@@ -95,7 +95,7 @@ func (dc *dhtCrawler) ok(msg *model.KrpcMsg, remoteAddr *net.UDPAddr) {
 	r := new(model.RespR)
 	r.Id = util.RandByteString(20)
 	smsg.R = r
-	dc.sendKrpcMsg(msg, remoteAddr)
+	dc.sendKrpcMsg(smsg, remoteAddr)
 }
 
 func decodeNodes(nodes string) *list.List {
