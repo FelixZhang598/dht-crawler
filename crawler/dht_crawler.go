@@ -85,7 +85,7 @@ func (dc *dhtCrawler) onGetPeersRequest(msg *model.KrpcMsg, remoteAddr *net.UDPA
 	r.Id = util.RandByteString(20)
 	r.Token = token
 	smsg.R = r
-	dc.sendKrpcMsg(msg, remoteAddr)
+	dc.sendKrpcMsg(smsg, remoteAddr)
 }
 
 func (dc *dhtCrawler) ok(msg *model.KrpcMsg, remoteAddr *net.UDPAddr) {
